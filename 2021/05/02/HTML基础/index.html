@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTML基础 | Star(￣o￣) . z Z</title><meta name="keywords" content="HTML"><meta name="author" content="Daiera"><meta name="copyright" content="Daiera"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HTML的基础知识,包括HTML的基本结构、标签的分类和常用标签的介绍,还有HTML文字排版的常用标签整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础">
+<meta property="og:url" content="http://example.com/2021/05/02/HTML%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Star(￣o￣) . z Z">
+<meta property="og:description" content="HTML的基础知识,包括HTML的基本结构、标签的分类和常用标签的介绍,还有HTML文字排版的常用标签整理">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/cover/7.jpg">
+<meta property="article:published_time" content="2021-05-02T15:09:26.000Z">
+<meta property="article:modified_time" content="2021-05-02T15:11:48.892Z">
+<meta property="article:author" content="Daiera">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/cover/7.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/05/02/HTML%E5%9F%BA%E7%A1%80/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-05-02 23:11:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover/7.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Star(￣o￣) . z Z</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTML基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-05-02T15:09:26.000Z" title="Created 2021-05-02 23:09:26">2021-05-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-05-02T15:11:48.892Z" title="Updated 2021-05-02 23:11:48">2021-05-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HTML基础"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>HTML基础</h1>
+<h2 id="HTML基本结构">HTML基本结构</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>	声明文档类型</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span>	字符集编码</span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span>	页面标题</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>&lt;html&gt;...&lt;/html&gt;</code>表示html文件开始和结束的位置,作为文件的根元素</li>
+<li><code>&lt;head&gt;...&lt;/head&gt;</code>表示html文件的头部,包含了所有你想包含在HTML页面中但不想在HTML页面中显示的内容。这些内容包括你想在搜索结果中出现的关键字和页面描述，CSS样式，字符集声明等</li>
+<li><code>&lt;body&gt;...&lt;/body&gt;</code>表示文档的主体区域,包含页面上的内容,如文本，图片，音频，游戏等</li>
+</ul>
+<h2 id="HTML标签">HTML标签</h2>
+<p>​	一个html标签元素（Element）通常有开始标签（Opening tag）、结束标签（Closing tag）、内容（Content）,有的可以是单一开始标签,也有的可以没有内容或元素</p>
+<h3 id="HTML的分类">HTML的分类</h3>
+<ul>
+<li>&lt;标记名称&gt;: 单一型,无设置值.如<code>&lt;br&gt;</code></li>
+<li>&lt;标记名称 属性=“属性值”&gt;:单一型,有设置值,如<code>&lt;hr color=&quot;red&gt;&quot;</code></li>
+<li>&lt;标记名称&gt;&lt;/标记名称&gt;:对称型,无设置值,如<code>&lt;title&gt;&lt;/title&gt;</code></li>
+<li>&lt;标记名称 属性=“属性值”&gt;&lt;/标记名称&gt;:对称型,有设置值,如<code>&lt;body bgcolog=&quot;red&quot;&gt;&lt;/body&gt;</code></li>
+</ul>
+<h3 id="常用HTML标签">常用HTML标签</h3>
+<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/tag_comment.asp">参见w3school</a></p>
+<h4 id="标题">标题</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>常用于网站标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>常用于页面主题的文章标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span><span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="段落">段落</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">&quot;对齐方式&quot;</span>&gt;</span>有left、right和center<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">&#x27;center&#x27;</span>&gt;</span>你好啊<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<div>
+    <p align='center'>你好啊</p>
+</div>
+<h4 id="滚动">滚动</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">direction</span>=<span class="string">&quot;滚动方向&quot;</span> <span class="attr">behavior</span>=<span class="string">&quot;滚动方式&quot;</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">direction</span>=<span class="string">&quot;left&quot;</span> <span class="attr">behavior</span>=<span class="string">&quot;alternate&quot;</span>&gt;</span>你好<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<div>
+    <marquee direction="left" behavior="alternate">你好啊</marquee>
+</div>
+<h4 id="列表">列表</h4>
+<ul>
+<li>
+<p>无序列表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">&quot;circle&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>type有<code>disc</code>,<code>circle</code>,<code>square</code></li>
+</ul>
+</li>
+<li>
+<p>有序列表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;a&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>type有<code>a</code>,<code>A</code>,<code>1</code>,<code>i</code>,<code>I</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="图像与多媒体">图像与多媒体</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> &gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>src表示路径,可以是绝对/相对路径或者网址</li>
+<li>alt表示替代文本</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bgsound</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span> <span class="attr">loop</span>=<span class="string">&quot;播放次数&quot;</span>&gt;</span>背景音乐<span class="tag">&lt;/<span class="name">bgsound</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="超链接">超链接</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;路径&quot;</span> <span class="attr">target</span>=<span class="string">&quot;打开方式&quot;</span> <span class="attr">title</span>=<span class="string">&quot;悬停显示内容&quot;</span>&gt;</span>链接内容<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>我创建了一个指向<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.mozilla.org/zh-CN/&quot;</span>   <span class="attr">title</span>=<span class="string">&quot;了解 Mozilla 使命以及如何参与贡献的最佳站点。&quot;</span>&gt;</span>Mozilla 主页<span class="tag">&lt;/<span class="name">a</span>&gt;</span>的超链接。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>我创建了一个指向
+<a target="_blank" rel="noopener" href="https://www.mozilla.org/zh-CN/"
+   title="了解 Mozilla 使命以及如何参与贡献的最佳站点。">Mozilla 主页</a>
+的超链接。
+</p>
+<ul>
+<li>
+<p>电子邮件链接,用<code>mailto:电子邮件地址</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;mailto:xxxx@qq.com&quot;&gt;向daiera发邮件&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+<p><a href="mailto:xxxx@qq.com">向daiera发邮件</a></p>
+</li>
+</ul>
+<h4 id="表格">表格</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span>    <span class="tag">&lt;<span class="name">tr</span>&gt;</span>    	<span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;跨的列数&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span>        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span>    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">table</span>&gt;</span>    <span class="tag">&lt;<span class="name">tr</span>&gt;</span>    	<span class="tag">&lt;<span class="name">th</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span> <span class="attr">align</span>=<span class="string">&quot;center&quot;</span>&gt;</span>信息<span class="tag">&lt;/<span class="name">th</span>&gt;</span>        <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span>        <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span> = <span class="string">&quot;3&quot;</span> <span class="attr">align</span>=<span class="string">&quot;center&quot;</span>&gt;</span>Daiera<span class="tag">&lt;/<span class="name">td</span>&gt;</span>    <span class="tag">&lt;<span class="name">tr</span>&gt;</span>        <span class="tag">&lt;<span class="name">th</span>&gt;</span>年龄<span class="tag">&lt;/<span class="name">th</span>&gt;</span>        <span class="tag">&lt;<span class="name">td</span>&gt;</span>21<span class="tag">&lt;/<span class="name">td</span>&gt;</span>        <span class="tag">&lt;<span class="name">th</span>&gt;</span>民族<span class="tag">&lt;/<span class="name">th</span>&gt;</span>        <span class="tag">&lt;<span class="name">td</span>&gt;</span>汉族<span class="tag">&lt;/<span class="name">td</span>&gt;</span>    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<table>
+    <tr>
+    	<th rowspan="2" align="center">信息</th>
+        <th>姓名</th>
+        <td colspan = "3" align="center">Daiera</td>
+    <tr>
+        <th>年龄</th>
+        <td>21</td>
+        <th>民族</th>
+        <td>汉族</td>
+    </tr>
+</table>
+<h4 id="表单">表单</h4>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;表单的处理地址 name=&quot;</span>表单名字&quot; <span class="attr">method</span>=<span class="string">&quot;提交方法&quot;</span>&gt;</span>    input 元素<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>method有<code>get</code>,<code>post</code>等</p>
+</li>
+<li>
+<p>form中的组件</p>
+<ul>
+<li>
+<p>文本框与密码框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    name:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">value</span>=<span class="string">&quot;&quot;</span> <span class="attr">name</span>=<span class="string">&quot;userName&quot;</span>/&gt;</span>    <span class="tag">&lt;<span class="name">br</span>&gt;</span>	password:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;123456&quot;</span> <span class="attr">name</span> = <span class="string">&quot;pwd&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form>
+    name:<input type="text" value="" name="userName"/>
+    <br>
+	password:<input type="password" value="123456" name = "pwd"/>
+</form>
+</li>
+<li>
+<p>单选按钮与复选框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">value</span>=<span class="string">&quot;单选按钮值&quot;</span> <span class="attr">name</span>=<span class="string">&quot;名称&quot;</span> <span class="attr">checked</span>/&gt;</span>内容    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">value</span>=<span class="string">&quot;复选按钮值&quot;</span> <span class="attr">name</span>=<span class="string">&quot;名称&quot;</span> <span class="attr">checked</span>/&gt;</span>内容<span class="tag">&lt;/<span class="name">form</span>&gt;</span><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">value</span>=<span class="string">&quot;man&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check1&quot;</span> <span class="attr">checked</span>/&gt;</span>男    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">value</span>=<span class="string">&quot;woman&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check1&quot;</span> /&gt;</span>女    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check2&quot;</span> <span class="attr">checked</span>/&gt;</span>1    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">value</span>=<span class="string">&quot;2&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check2&quot;</span> /&gt;</span>2    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">value</span>=<span class="string">&quot;3&quot;</span> <span class="attr">name</span>=<span class="string">&quot;check2&quot;</span> /&gt;</span>3<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form>
+    <input type="radio" value="man" name="check1" checked/>男
+    <input type="radio" value="woman" name="check1" />女
+    <input type="checkbox" value="1" name="check2" checked/>1
+    <input type="checkbox" value="2" name="check2" />2
+    <input type="checkbox" value="3" name="check2" />3
+</form>
+</li>
+<li>
+<p>按钮</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;按钮&quot;</span> <span class="attr">name</span>=<span class="string">&quot;button1&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form>
+    <input type="button" value="按钮" name="button1"/>
+</form>
+<ul>
+<li>type不同时有不同的作用
+<ul>
+<li><code>button</code>配合JavaScript处理表单</li>
+<li><code>reset</code>清除表单信息</li>
+<li><code>submit</code>提交表单</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>文件域</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span> <span class="attr">enctype</span>=<span class="string">&quot;multipart/formdata&quot;</span>&gt;</span>    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;fileName&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form action="" enctype="multipart/formdata">
+    <input type="file" name="fileName">
+</form>
+</li>
+<li>
+<p>下拉列表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;名称&quot;</span> <span class="attr">size</span>=<span class="string">&quot;1&quot;</span> <span class="attr">multiple</span>&gt;</span>        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span> <span class="attr">selected</span>&gt;</span>内容1        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;2&quot;</span>&gt;</span>内容2    <span class="tag">&lt;/<span class="name">select</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form>
+    <select name="名称" size="1" multiple>
+        <option value="1" selected>内容1
+        <option value="2">内容2
+    </select>
+</form>
+</li>
+<li>
+<p>文本区</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<form>
+    <textarea name="" cols="20" rows="4"></textarea>
+</form>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="HTML文字">HTML文字</h2>
+<h3 id="常用文字修饰标签">常用文字修饰标签</h3>
+<ul>
+<li><code>&lt;p&gt;&lt;/p&gt;</code>之间表示一个段落</li>
+<li><code>&lt;b&gt;&lt;/b&gt;</code>表示粗体</li>
+<li><code>&lt;i&gt;&lt;/i&gt;</code>表示斜体</li>
+<li><code>&lt;u&gt;&lt;/u&gt;</code>表示下划线</li>
+<li><code>&lt;em&gt;&lt;/em&gt;</code>之间文字为斜体,强调用</li>
+<li><code>&lt;strong&gt;&lt;/strong&gt;</code>之间文字为黑体,非常重要</li>
+<li><code>&lt;span&gt;&lt;/span&gt;</code>组合行内文字,便于css修改样式</li>
+<li><code>&lt;abbr title=&quot;&quot;&gt;&lt;/abbr&gt;</code>表示缩略语</li>
+<li><code>&lt;address&gt;&lt;/address&gt;</code>表示联系方表示式</li>
+<li><code>&lt;sup&gt;&lt;/sup&gt;</code>表示上标,<code>&lt;sub&gt;&lt;/sub&gt;</code>表示下标</li>
+<li><code>&lt;pre&gt;&lt;/pre&gt;</code>用于保留空白字符,<code>&lt;code&gt;&lt;/code&gt;</code>用于表示代码</li>
+<li><code>&lt;time datetime=&quot;2016-01-20&quot;&gt;&lt;/time&gt;</code>表示日期</li>
+</ul>
+<h3 id="常用格式修饰标签">常用格式修饰标签</h3>
+<ul>
+<li><code>&lt;span&gt;</code>内联无语义标签,<code>&lt;div&gt;</code>块间无语义标签</li>
+<li><code>&lt;br&gt;</code>换行符</li>
+<li><code>&lt;hr&gt;</code>水平分割线</li>
+<li><code>&lt;!--</code>和<code>--&gt;</code>之间是html的注释</li>
+</ul>
+<h3 id="字符实体引用">字符实体引用</h3>
+<p>用于生成哪些键盘上没有的印刷字符,以<code>&amp;</code>开头,以<code>;</code>结尾,常用的字符实体引用如下</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>等价字符引用&amp;entity_name;</th>
+<th>等价字符引用&amp;#number;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td><code>&amp;amp;</code></td>
+<td><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td><code>&amp;gt;</code></td>
+<td><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td><code>&amp;lt;</code></td>
+<td><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td><code>&amp;quot;</code></td>
+<td><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td>空格</td>
+<td><code>&amp;nbsp;</code></td>
+<td>``</td>
+</tr>
+</tbody>
+</table>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><div class="post_share"><div class="social-share" data-image="/img/cover/7.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/05/02/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/"><img class="next-cover" src="/img/cover/7.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">前端学习目录</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/04/23/HTML的Emmet语法/" title="HTML的Emmet语法"><img class="cover" src="/img/cover/4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-04-23</div><div class="title">HTML的Emmet语法</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Daiera</div><div class="author-info__description">一个追求梦想的小菜鸟</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Daiera"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Daiera" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:3017216133@tju.edu.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">HTML基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">HTML基本结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%A0%87%E7%AD%BE"><span class="toc-number">1.2.</span> <span class="toc-text">HTML标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">1.2.1.</span> <span class="toc-text">HTML的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8HTML%E6%A0%87%E7%AD%BE"><span class="toc-number">1.2.2.</span> <span class="toc-text">常用HTML标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">段落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BB%9A%E5%8A%A8"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">滚动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E4%B8%8E%E5%A4%9A%E5%AA%92%E4%BD%93"><span class="toc-number">1.2.2.5.</span> <span class="toc-text">图像与多媒体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-number">1.2.2.6.</span> <span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.2.2.7.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95"><span class="toc-number">1.2.2.8.</span> <span class="toc-text">表单</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML%E6%96%87%E5%AD%97"><span class="toc-number">1.3.</span> <span class="toc-text">HTML文字</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%87%E5%AD%97%E4%BF%AE%E9%A5%B0%E6%A0%87%E7%AD%BE"><span class="toc-number">1.3.1.</span> <span class="toc-text">常用文字修饰标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%A0%BC%E5%BC%8F%E4%BF%AE%E9%A5%B0%E6%A0%87%E7%AD%BE"><span class="toc-number">1.3.2.</span> <span class="toc-text">常用格式修饰标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E5%AE%9E%E4%BD%93%E5%BC%95%E7%94%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text">字符实体引用</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/05/02/HTML%E5%9F%BA%E7%A1%80/" title="HTML基础"><img src="/img/cover/7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML基础"/></a><div class="content"><a class="title" href="/2021/05/02/HTML%E5%9F%BA%E7%A1%80/" title="HTML基础">HTML基础</a><time datetime="2021-05-02T15:09:26.000Z" title="Created 2021-05-02 23:09:26">2021-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/02/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" title="前端学习目录"><img src="/img/cover/7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端学习目录"/></a><div class="content"><a class="title" href="/2021/05/02/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%BD%95/" title="前端学习目录">前端学习目录</a><time datetime="2021-05-02T15:06:39.000Z" title="Created 2021-05-02 23:06:39">2021-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/02/MongoDB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" title="MongoDB的基本操作"><img src="/img/cover/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MongoDB的基本操作"/></a><div class="content"><a class="title" href="/2021/05/02/MongoDB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" title="MongoDB的基本操作">MongoDB的基本操作</a><time datetime="2021-05-02T12:38:45.000Z" title="Created 2021-05-02 20:38:45">2021-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/02/MongoDB%E5%AE%89%E8%A3%85/" title="MongoDB安装"><img src="/img/cover/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MongoDB安装"/></a><div class="content"><a class="title" href="/2021/05/02/MongoDB%E5%AE%89%E8%A3%85/" title="MongoDB安装">MongoDB安装</a><time datetime="2021-05-02T11:16:02.000Z" title="Created 2021-05-02 19:16:02">2021-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/02/%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="爬虫入门（一）基本环境配置"><img src="/img/cover/5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="爬虫入门（一）基本环境配置"/></a><div class="content"><a class="title" href="/2021/05/02/%E7%88%AC%E8%99%AB%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="爬虫入门（一）基本环境配置">爬虫入门（一）基本环境配置</a><time datetime="2021-05-02T10:03:25.000Z" title="Created 2021-05-02 18:03:25">2021-05-02</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Daiera</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css"><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', '', 'katex-wrap')
+  })
+})()</script><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'e258a7ff58f5e75dc45a',
+      clientSecret: '4d91e1e1fdd43837e045e2d9a809156d8986f949',
+      repo: 'Daiera.github.io',
+      owner: 'Daiera',
+      admin: ['Daiera'],
+      id: '283025456cda6a4010a8f27dc33e1d04',
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: false,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
